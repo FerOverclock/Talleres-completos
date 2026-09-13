@@ -1,0 +1,41 @@
+REGLA 1:
+    SI [Tiene Motor] Y [Tiene Dos Ruedas]ENTONCES [Es Motocicleta]
+Si el vehículo posee motor y cuenta con dos ruedas, el sistema deduce automáticamente que se trata de una motocicleta.  
+    
+    
+REGLA 2:
+    SI [Es Motocicleta]ENTONCES [Requiere Casco]
+Si el sistema identificó que es una motocicleta, establece como obligatorio el uso de casco.  
+
+REGLA 3:
+    SI [Requiere Casco] Y [Es Menor de Edad]ENTONCES [Permiso Denegado]
+Si el vehículo requiere casco y la persona manejando es menor de edad, el sistema le denegará el permiso de circulación.  
+
+
+TRAZA PASO A PASO:
+Hechos iniciales: 
+    Tiene Motor = True, 
+    Tiene Dos Ruedas = True, 
+    Es Menor de Edad = True.  
+
+CICLO 1:
+    Se evalúa R1. 
+    Como tiene motor y tiene dos ruedas, la regla se cumple.  
+    
+Ingresa el nuevo hecho Es Motocicleta = True.  
+
+CICLO 2:
+    Se evalúa R2. 
+    Como en el ciclo anterior se dedujo que es motocicleta, la regla se cumple.  
+
+Ingresa el nuevo hecho Requiere Casco = True.  
+
+CICLO 3:
+    Se evalúa R3. 
+    Como requiere casco y en los hechos iniciales la persona es menor de edad, la regla se cumple.  
+
+Ingresa el nuevo hecho Permiso Denegado = True.  
+
+CICLO 4:
+
+No se cumplen más reglas ni hay hechos nuevos por extraer. El motor se detiene. 
