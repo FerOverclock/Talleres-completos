@@ -1,1 +1,18 @@
-/hola
+REGLAS:
+1.  SI deuda_activa > 10000 Y tiene_avalista == FALSO
+        ENTONCES elegibilidad = "NO ELEGIBLE"
+
+Significaria que si tiene una deuda mayor a 1000 y no tiene avalista no sera elegible
+
+REGLA 2:
+2.  SI ingresos_anuales > 50000 Y historial_crediticio == "Excelente" Y NO (deuda_activa > 10000 Y tiene_avalista == FALSO)
+        ENTONCES elegibilidad = "APROBADO: Elegible para Crédito Hipotecario Plus"
+
+Significaria que si no tiene una deuda mayor a 10 mil y no tiene avalista pero si tiene  
+ingresos anuales amyores que 50 mil y un historial crediticio excelente le daran el credito 
+
+REGLA 3:
+3.  SI ingresos_anuales <= 50000 O historial_crediticio != "Excelente"
+        ENTONCES elegibilidad = "NO ELEGIBLE O REQUIERE REVISIÓN MANUAL"
+
+Significara que los ingresos menores a 50 mil o historial diferente a excelente requerira una revision manual o no lo eligiran
