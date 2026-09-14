@@ -1,0 +1,34 @@
+1. CÁLCULO PARA x = 20°C:
+Como 18 < 20 <= 22 (tramo creciente a < x <= b):
+Formula: u(x) = (x - a) / (b - a)
+
+u(20) = (20 - 18) / (22 - 18)
+u(20) = 2 / 4
+u(20) = 0.5
+
+2. CÁLCULO PARA x = 25°C:
+
+Como 22 < 25 < 26 (tramo decreciente b < x <= c):
+Formula: u(x) = (c - x) / (c - b)
+
+u(25) = (26 - 25) / (26 - 22)
+u(25) = 1 / 4
+u(25) = 0.25
+
+3. INTERPRETACIÓN DE LOS RESULTADOS Y REGLAS:
+
+REGLA 1:
+    SI u(20) = 0.5
+    ENTONCES la pertenencia al conjunto "Agradable" es del 50%
+
+A 20°C la temperatura es parcialmente confortable. Al no haber 
+alcanzado el punto ideal (22°C), el motor de inferencia activará las reglas de 
+climatización a media potencia (50% de intensidad).
+
+REGLA 2:
+    SI u(25) = 0.25
+    ENTONCES la pertenencia al conjunto "Agradable" es del 25%
+
+A 25°C el ambiente está cerca del límite superior caliente (26°C), 
+por lo que el grado de pertenencia es bajo (25%) y el sistema responderá 
+aumentando la potencia del aire acondicionado.
