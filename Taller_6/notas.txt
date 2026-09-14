@@ -1,0 +1,25 @@
+DATOS INICIALES:
+- Total clientes: 6 (3 compraron seguro, 3 no compraron)[cite: 6, 7]
+- Entropía inicial: Máxima (1.0)[cite: 6, 7]
+
+EVALUACIÓN DE PREGUNTAS:
+- Pregunta A (¿Es mayor de 30 años?): 
+  - Izquierda: [2 compraron, 2 no] -> Entropía = 1.0 (Sin pureza)[cite: 6, 7]
+  - Derecha: [1 compró, 1 no] -> Entropía = 1.0 (Sin pureza)[cite: 6, 7]
+  - Reducción de entropía: 0
+
+- Pregunta B (¿Tiene Auto?): 
+  - Izquierda: [3 compraron, 0 no] -> Entropía = 0.0 (100% puro)[cite: 6, 7]
+  - Derecha: [0 compraron, 3 no] -> Entropía = 0.0 (100% puro)[cite: 6, 7]
+  - Reducción de entropía: Máxima
+
+1. MAYOR GANANCIA DE INFORMACIÓN:
+
+La Pregunta B ("¿Tiene Auto?") proporciona la mayor Ganancia de Información, 
+ya que reduce la entropía de 1.0 a 0.0 dividiendo los datos en dos grupos 
+completamente puros.
+
+2. REGLAS LÓGICAS APRENDIDAS AUTOMÁTICAMENTE:
+
+- REGLA 1: SI Tiene_Auto == SÍ ENTONCES Compró_Seguro = SÍ
+- REGLA 2: SI Tiene_Auto == NO ENTONCES Compró_Seguro = NO
