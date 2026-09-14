@@ -1,0 +1,22 @@
+DATOS DE ENTRADA:
+- x = [10, 20, 30, 40]
+- μ = [0.2, 0.8, 0.8, 0.0]
+
+FÓRMULA:
+COG = Σ(x * μ(x)) / Σ μ(x)
+
+1. NUMERADOR: Σ(x * μ(x))
+   (10 * 0.2) + (20 * 0.8) + (30 * 0.8) + (40 * 0.0)
+   = 2.0 + 16.0 + 24.0 + 0.0
+   = 42.0
+
+2. DENOMINADOR: Σ μ(x)
+   0.2 + 0.8 + 0.8 + 0.0
+   = 1.8
+
+3. RESULTADO CRISP:
+   COG = 42.0 / 1.8
+   COG = 23.33%
+
+INTERPRETACIÓN:
+El sistema otorgará un 23.33% de descuento exacto al cliente.
