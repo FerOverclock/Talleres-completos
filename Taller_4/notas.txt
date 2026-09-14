@@ -1,0 +1,23 @@
+    DATOS DE ENTRADA (GRADOS DE MEMBRESÍA):
+    - Rentabilidad_ALTA = 0.6
+    - Impacto_Social_ALTO = 0.2
+    - Riesgo_BAJO = 0.4
+
+    REGLA A EVALUAR (R1):
+    SI (Rentabilidad es ALTA O Impacto_Social es ALTO) Y (Riesgo es BAJO)
+    ENTONCES (Aprobación es SEGURA)
+
+1. CÁLCULO MATEMÁTICO DE LA FUERZA DE ACTIVACIÓN:
+    Paso A: Evaluación de la operación OR dentro del paréntesis usando MAX(A, B).
+    Fuerza_OR = MAX(Rentabilidad_ALTA, Impacto_Social_ALTO)
+    Fuerza_OR = MAX(0.6, 0.2)
+    Fuerza_OR = 0.6
+
+    Paso B: Evaluación de la operación Y entre la subexpresión y Riesgo_BAJO usando MIN(A, B).
+    Activacion_R1 = MIN(Fuerza_OR, Riesgo_BAJO)
+    Activacion_R1 = MIN(0.6, 0.4)
+    Activacion_R1 = 0.4
+
+2. INTERPRETACIÓN
+- El conjunto difuso correspondiente a la conclusión "Aprobación SEGURA" se 
+  truncará a una altura máxima de Y = 0.4.

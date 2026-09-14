@@ -16,6 +16,8 @@ u(25) = 1 / 4
 u(25) = 0.25
 
 3. INTERPRETACIÓN DE LOS RESULTADOS Y REGLAS:
+    El valor decimal representa el nivel de pertenencia o certeza parcial que tiene 
+    un valor exacto del mundo real dentro del conjunto difuso.
 
 REGLA 1:
     SI u(20) = 0.5
