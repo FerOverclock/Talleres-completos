@@ -1,0 +1,24 @@
+1. LÍNEA RECTA ÓPTIMA (HIPERPLANO SEPARADOR):
+Puntos de frontera más cercanos entre clases:
+- Desde Clase A: (3,3) y (4,2)[cite: 8]
+- Desde Clase B: (6,6)[cite: 8]
+
+El punto medio del espacio entre las fronteras está en la recta diagonal con 
+ecuación: Y = X - 0.5 (o la frontera equivalente x1 - x2 - 0.5 = 0).
+Esta línea maximiza la distancia del margen ("calle") dejando exactamente 
+el mismo espacio libre a ambos lados[cite: 8].
+
+2. VECTORES DE SOPORTE IDENTIFICADOS:
+Los puntos críticos que sostienen el margen son:
+- De la Clase A: (3, 3) y (4, 2)[cite: 8]
+- De la Clase B: (6, 6)[cite: 8]
+
+3. EFECTO DE AGREGAR UN NUEVO PUNTO EN (1,1):
+¿Cambiaría la posición de la línea? NO.
+
+JUSTIFICACIÓN TEÓRICA:
+El algoritmo de SVM solo utiliza los Vectores de Soporte (los puntos más cercanos 
+a la frontera de decisión) para construir el hiperplano[cite: 8]. El punto (1,1) está 
+ubicado en la zona profunda de la Clase A, muy lejos del margen de separación[cite: 8]. 
+Por lo tanto, no influye en el cálculo del margen máximo y la posición de la 
+línea separadora se mantiene intacta[cite: 8].
