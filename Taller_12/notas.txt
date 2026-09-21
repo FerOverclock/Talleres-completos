@@ -18,6 +18,5 @@ Cálculo: 4 neuronas = 4 Sesgos
 
 TOTAL PARÁMETROS = 16 + 5 = 21 Parámetros entrenables
 
-INTERPRETACIÓN:
 Esta pequeña red posee 21 variables ajustables (16 pesos y 5 sesgos) que se 
 optimizarán mediante entrenamiento para aprender a aprobar o rechazar créditos.

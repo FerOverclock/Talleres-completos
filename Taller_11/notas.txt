@@ -1,0 +1,17 @@
+1. CÁLCULO DE LA COMBINACIÓN LINEAL (Z):
+Fórmula: Z = (X1 * W1) + (X2 * W2) + b[cite: 7]
+Z = (50 * 0.8) + (20 * -0.5) + (-10)[cite: 7]
+Z = 40.0 - 10.0 - 10.0
+Z = 20.0
+
+2. ACTIVACIÓN MEDIANTE LA FUNCIÓN ESCALÓN:
+Función Escalón: Salida = 1 si Z >= 0, Salida = 0 si Z < 0[cite: 7]
+Como Z = 20.0 (es mayor o igual a 0):
+Salida = 1
+Resultado: La neurona dispara aprobando el crédito (Salida = 1)[cite: 7].
+
+3. ANÁLISIS DE PESOS (¿POR QUÉ W2 ES NEGATIVO?):
+El peso W2 (-0.5) es negativo porque la variable X2 representa las deudas del 
+cliente[cite: 7]. En el contexto financiero, una mayor deuda disminuye la capacidad 
+de pago, actuando como un factor de riesgo que reduce la combinación lineal (Z) 
+y penaliza la probabilidad de aprobación del crédito.
